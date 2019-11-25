@@ -6,12 +6,19 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
 
-    background-color: #000;
+    background-color: #FFF;
+}
+
+.container {
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
 
 /* Header */
 
@@ -67,7 +74,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Intro */
+/* Main / Intro */
+
 .intro {
     height: 40rem;
     display: flex;
@@ -111,8 +119,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-
-/* Button */
 .btn {
     display: inline-block;
     padding: 1.2rem 1.2rem;
@@ -127,5 +133,70 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 
     background: 0;
+}
+
+
+/* Main / Adventages */
+
+.adventages {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2rem 0;
+    margin: 0 -3rem;
+
+    color: #000;
+}
+
+.adventages__item {
+    width: 33.333333%;
+    padding: 3rem;
+}
+
+.adventages__title {
+    margin-bottom: 1.5rem;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.adventages__text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+
+/* Main / About */
+
+.about__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 5rem 7.5rem;
+}
+
+.about__item {
+    width: 45%;
+}
+
+.about__title {
+    margin-bottom: 1rem;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.about__text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.about__image img {
+    max-width: 35rem;
+}
+
+.bg-color {
+    background-color: #F7F7F7;
 }
 
