@@ -20,9 +20,9 @@
             </div>
         </div>
         <nav class="header__nav">
-            <a class="header__nav-link" href="#">Преимущества</a>
-            <a class="header__nav-link" href="#">О ЖК</a>
-            <a class="header__nav-link" href="#">Места для отдыха</a>
+            <a class="header__nav-link" href="#advantages">Преимущества</a>
+            <a class="header__nav-link" href="#about-info">О ЖК</a>
+            <a class="header__nav-link" href="#about-rest">Места для отдыха</a>
         </nav>
     </div> <!-- /.header__inner -->
 </header>
@@ -43,45 +43,47 @@
                 Место, откуда <b>не</b> хочется улетать
             </h2>
             <button class="btn" type="button">
-                Забронировать
+                <a class="header__btn" href="#request">Забронировать</a>
             </button>
         </div> <!-- /.intro__inner -->
     </div> <!-- /.intro -->
 
-    <div class="container">
-        <div class="adventages">
+    <div class="adventages" id="advantages">
+        <div class="container">
+            <div class="adventages__inner">
 
-            <div class="adventages__item">
-                <h2 class="adventages__title">
-                    Уникальный вид
-                </h2>
-                <div class="adventages__text">
-                    Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.
+                <div class="adventages__item">
+                    <h2 class="adventages__title">
+                        Уникальный вид
+                    </h2>
+                    <div class="adventages__text">
+                        Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.
+                    </div>
                 </div>
-            </div>
 
-            <div class="adventages__item">
-                <h2 class="adventages__title">
-                    Инфраструктура
-                </h2>
-                <div class="adventages__text">
-                    Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.
+                <div class="adventages__item">
+                    <h2 class="adventages__title">
+                        Инфраструктура
+                    </h2>
+                    <div class="adventages__text">
+                        Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.
+                    </div>
                 </div>
-            </div>
 
-            <div class="adventages__item">
-                <h2 class="adventages__title">
-                    Близость к Москве
-                </h2>
-                <div class="adventages__text">
-                    При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.
+                <div class="adventages__item">
+                    <h2 class="adventages__title">
+                        Близость к Москве
+                    </h2>
+                    <div class="adventages__text">
+                        При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.
+                    </div>
                 </div>
-            </div>
 
-        </div> <!-- /.adventages -->
-    </div> <!-- /.container -->
+            </div> <!-- /.adventages__inner -->
+        </div> <!-- /.container -->
+    </div> <!-- /.adventages -->
 
-    <div class="about bg-color">
+    <div class="about bg-color" id="about-info">
         <div class="container">
             <div class="about__inner">
 
@@ -104,7 +106,7 @@
         </div> <!-- /.container -->
     </div> <!-- /.about -->
 
-    <div class="about">
+    <div class="about" id="about-rest">
         <div class="container">
             <div class="about__inner">
 
@@ -126,6 +128,66 @@
             </div> <!-- /.about__inner -->
         </div> <!-- /.container -->
     </div> <!-- /.about -->
+
+    <div class="request bg-color" id="request">
+        <div class="container">
+            <div class="request__inner">
+                <h2 class="request__title">
+                    Оставьте заявку сегодня!
+                </h2>
+
+                <form class="request__form" action="/" method="post">
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">
+                            Параметры квартиры
+                        </legend>
+                        <div class="form__item">
+                            <label class="form__label" for="select-rooms">Количество комнат: </label>
+                            <select class="form__select" id="select-rooms">
+                                <option value="value1" selected>1</option>
+                                <option value="value2">2</option>
+                                <option value="value3">3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="input-decor">Отделка: </label>
+                            <select class="form__select" name="select" id="input-decor">
+                                <option value="value1" selected>Без отделки</option>
+                                <option value="value2">Стандартная отделка</option>
+                                <option value="value3">Дорого-богато</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">
+                            Контактная информация
+                        </legend>
+                        <div class="form__item">
+                            <label class="form__label" for="input-name">Имя: </label>
+                            <input class="form__input" type="text" id="input-name" placeholder="">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="input-phone">Телефон: </label>
+                            <input class="form__input" type="text" id="input-phone" placeholder="">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="input-email">E-mail: </label>
+                            <input class="form__input" type="text" id="input-email" placeholder="">
+                        </div>
+                    </fieldset>
+
+                    <div class="form__button">
+                        <button class="btn btn--green" type="submit">
+                            Отправить
+                        </button>
+                    </div>
+
+                </form>
+
+            </div> <!-- /.request__inner -->
+        </div> <!-- /.container -->
+    </div> <!-- /.request -->
 
 </div> <!-- /.main -->
 

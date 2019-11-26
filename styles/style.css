@@ -9,14 +9,19 @@ body {
     background-color: #FFF;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
 .container {
     width: 100%;
     max-width: 100rem;
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+.bg-color {
+    background-color: #F7F7F7;
 }
 
 
@@ -73,6 +78,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
 }
 
+.header__btn {
+    color: #FFF;
+    text-decoration: none;
+}
+
 
 /* Main / Intro */
 
@@ -119,9 +129,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+
+/* Button */
+
 .btn {
     display: inline-block;
     padding: 1.2rem 1.2rem;
+    min-width: 16rem;
 
     border: 1px solid #FFF;
     border-radius: 1rem;
@@ -138,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Main / Adventages */
 
-.adventages {
+.adventages__inner {
     display: flex;
     flex-wrap: nowrap;
     padding: 2rem 0;
@@ -196,7 +210,107 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 35rem;
 }
 
-.bg-color {
-    background-color: #F7F7F7;
+
+/* Main / Request */
+
+.request__inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 5rem 0;
+
+    text-align: center;
 }
 
+.request__title {
+    margin-bottom: 3rem;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.request__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    width: 42rem;
+}
+
+.form__fieldset {
+    border: 2px solid #5DCFAE;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form__fieldset:last-child {
+    margin-bottom: 0;
+}
+
+.form__legend {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #5DCFAE;
+
+    text-align: left;
+}
+
+.form__item {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+}
+
+.form__label {
+    width: 45%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.form__select {
+    width: 45%;
+    background-color: #FFF;
+    border: 1px solid #AAA;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.form__select:focus {
+    outline: none;
+    box-shadow: 0 0 3px #5DCFAE;
+}
+
+.form__input {
+    width: 55%;
+    background-color: #FFF;
+    border: 1px solid #AAA;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.form__input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #5DCFAE;
+}
+
+.form__button {
+    text-align: left;
+}
+
+.btn--green {
+    border-color: #5DCFAE;
+    color: #5DCFAE;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: #FFF;
+    font-size: 2rem;
+    padding: 2rem;
+}
