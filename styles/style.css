@@ -30,6 +30,11 @@ h1, h2, h3, h4, h5, h6 {
 .header {
     width: 100%;
     height: 7rem;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
 }
 
 .header__inner {
@@ -191,6 +196,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Main / About */
+.main {
+    margin-top: 7rem;
+}
 
 .about__inner {
     display: flex;
@@ -394,4 +402,16 @@ h1, h2, h3, h4, h5, h6 {
 .footer__list-link:hover {
     color: #FFF;
     text-decoration: underline;
+}
+
+
+/* Links */
+
+#advantages,
+#about-info,
+#about-rest,
+#request {
+    padding-top: 7rem;
+    margin-top: -7rem;
+    background-clip: content-box;
 }
