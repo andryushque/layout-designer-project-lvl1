@@ -78,11 +78,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
 }
 
-.header__btn {
-    color: #FFF;
-    text-decoration: none;
+.header__nav-link:hover {
+    text-decoration: underline;
 }
-
 
 /* Main / Intro */
 
@@ -149,6 +147,18 @@ h1, h2, h3, h4, h5, h6 {
     background: 0;
 }
 
+.btn:focus {
+    outline: none;
+}
+
+.btn--request:hover {
+    box-shadow: 0 0 3px #FFF;
+}
+
+.btn--request:focus {
+    box-shadow: 0 0 6px #FFF;
+}
+
 
 /* Main / Adventages */
 
@@ -186,11 +196,11 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 5rem 7.5rem;
+    padding: 5rem 3rem;
 }
 
-.about__item {
-    width: 45%;
+.about__info {
+    width: 50%;
 }
 
 .about__title {
@@ -207,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about__image img {
-    max-width: 35rem;
+    max-width: 30rem;
 }
 
 
@@ -236,6 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 
     width: 42rem;
 }
+
 
 .form__fieldset {
     border: 2px solid #5DCFAE;
@@ -294,23 +305,93 @@ h1, h2, h3, h4, h5, h6 {
 
 .form__input:focus {
     outline: none;
-    box-shadow: 0 0 5px #5DCFAE;
+    box-shadow: 0 0 6px #5DCFAE;
 }
 
 .form__button {
     text-align: left;
 }
 
-.btn--green {
+
+.btn--send {
     border-color: #5DCFAE;
     color: #5DCFAE;
+}
+
+.btn--send:hover {
+    box-shadow: 0 0 3px #5DCFAE;
+}
+
+.btn--send:focus {
+    box-shadow: 0 0 6px #5DCFAE;
 }
 
 
 /* Footer */
 
 .footer{
-    background-color: #FFF;
-    font-size: 2rem;
-    padding: 2rem;
+    background-color: #313745;
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    color: #000;
+}
+
+.footer__item {
+    padding: 3rem 0;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer__logo-image img {
+    height: 3rem;
+}
+
+.footer__logo-title {
+    margin-left: 1.5rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.footer__copyright {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #FFF;
+}
+
+.footer__item-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.footer__list {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.footer__list-item {
+    margin-bottom: .5rem;
+}
+
+.footer__list-link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer__list-link:hover {
+    color: #FFF;
+    text-decoration: underline;
 }

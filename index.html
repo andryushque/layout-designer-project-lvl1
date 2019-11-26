@@ -11,6 +11,7 @@
 <!-- Header -->
 <header class="header">
     <div class="header__inner">
+
         <div class="header__logo">
             <div class="header__logo-image">
                 <img src="images/logo.svg">
@@ -19,11 +20,13 @@
                 Лунное море
             </div>
         </div>
+
         <nav class="header__nav">
             <a class="header__nav-link" href="#advantages">Преимущества</a>
             <a class="header__nav-link" href="#about-info">О ЖК</a>
             <a class="header__nav-link" href="#about-rest">Места для отдыха</a>
         </nav>
+
     </div> <!-- /.header__inner -->
 </header>
 
@@ -33,6 +36,7 @@
 
     <div class="intro">
         <div class="intro__inner">
+
             <div class="intro__logo">
                 <img src="images/logo.svg">
             </div>
@@ -42,9 +46,10 @@
             <h2 class="intro__subtitle">
                 Место, откуда <b>не</b> хочется улетать
             </h2>
-            <button class="btn" type="button">
-                <a class="header__btn" href="#request">Забронировать</a>
-            </button>
+            <a class="btn btn--request" href="#request">
+                Забронировать
+            </a>
+
         </div> <!-- /.intro__inner -->
     </div> <!-- /.intro -->
 
@@ -87,7 +92,7 @@
         <div class="container">
             <div class="about__inner">
 
-                <div class="about__item">
+                <div class="about__info">
                     <h2 class="about__title">
                         О ЖК «Лунное море»
                     </h2>
@@ -104,7 +109,7 @@
 
             </div> <!-- /.about__inner -->
         </div> <!-- /.container -->
-    </div> <!-- /.about -->
+    </div> <!-- /#about-info -->
 
     <div class="about" id="about-rest">
         <div class="container">
@@ -114,7 +119,7 @@
                     <img src="images/moon-2.jpg">
                 </div>
 
-                <div class="about__item">
+                <div class="about__info">
                     <h2 class="about__title">
                         Места для отдыха
                     </h2>
@@ -127,11 +132,12 @@
 
             </div> <!-- /.about__inner -->
         </div> <!-- /.container -->
-    </div> <!-- /.about -->
+    </div> <!-- /#about-rest -->
 
     <div class="request bg-color" id="request">
         <div class="container">
             <div class="request__inner">
+
                 <h2 class="request__title">
                     Оставьте заявку сегодня!
                 </h2>
@@ -141,6 +147,7 @@
                         <legend class="form__legend">
                             Параметры квартиры
                         </legend>
+
                         <div class="form__item">
                             <label class="form__label" for="select-rooms">Количество комнат: </label>
                             <select class="form__select" id="select-rooms">
@@ -149,6 +156,7 @@
                                 <option value="value3">3</option>
                             </select>
                         </div>
+
                         <div class="form__item">
                             <label class="form__label" for="input-decor">Отделка: </label>
                             <select class="form__select" name="select" id="input-decor">
@@ -163,14 +171,17 @@
                         <legend class="form__legend">
                             Контактная информация
                         </legend>
+
                         <div class="form__item">
                             <label class="form__label" for="input-name">Имя: </label>
                             <input class="form__input" type="text" id="input-name" placeholder="">
                         </div>
+
                         <div class="form__item">
                             <label class="form__label" for="input-phone">Телефон: </label>
                             <input class="form__input" type="text" id="input-phone" placeholder="">
                         </div>
+
                         <div class="form__item">
                             <label class="form__label" for="input-email">E-mail: </label>
                             <input class="form__input" type="text" id="input-email" placeholder="">
@@ -178,7 +189,7 @@
                     </fieldset>
 
                     <div class="form__button">
-                        <button class="btn btn--green" type="submit">
+                        <button class="btn btn--send" type="submit">
                             Отправить
                         </button>
                     </div>
@@ -194,7 +205,61 @@
 
 <!-- Footer -->
 <footer class="footer">
-  // Подвал сайта. Обычно здесь находится контактная информация, дополнительное меню, юридическая информация о компании
+    <div class="container">
+        <div class="footer__inner">
+
+            <div class="footer__item">
+                <div class="footer__logo">
+                    <div class="footer__logo-image">
+                        <img src="images/logo.svg">
+                    </div>
+                    <div class="footer__logo-title">
+                        Лунное море
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    &copy; 2032 год
+                </div>
+            </div>
+
+            <div class="footer__item">
+                <h2 class="footer__item-title">
+                    Проектная документация
+                </h2>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                            Скачать
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                            Посмотреть на сайте
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__item">
+                <h2 class="footer__item-title">
+                    О застройщике
+                </h2>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                            Сайт компании
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div> <!-- /.footer__inner -->
+    </div> <!-- /.container -->
 </footer>
 
 
