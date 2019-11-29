@@ -34,6 +34,10 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
+
 .bg-gray {
     background-color: #F7F7F7;
 }
@@ -254,7 +258,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-legend {
     color: #5DCFAE;
-    text-align: left;
 }
 
 .form-item {
@@ -264,7 +267,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-label {
     width: 45%;
-    text-align: left;
 }
 
 .form-select {
@@ -289,10 +291,6 @@ h1, h2, h3, h4, h5, h6 {
 .form-input:focus {
     outline: none;
     box-shadow: 0 0 6px #5DCFAE;
-}
-
-.form-button {
-    text-align: left;
 }
 
 
