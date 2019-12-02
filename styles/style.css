@@ -22,8 +22,20 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+.w-40 {
+    width: 40%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
 .flex {
     display: flex;
+}
+
+.jc-right {
+    justify-content: flex-end;
 }
 
 .ai-center {
@@ -107,16 +119,16 @@ h1, h2, h3, h4, h5, h6 {
     color: #313745;
 }
 
-.nav-link {
+.header-link {
     margin-left: 2.5rem;
     color: #313745;
 }
 
-.nav-link:first-child {
+.header-link:first-child {
     margin-left: 0;
 }
 
-.nav-link:hover {
+.header-link:hover {
     text-decoration: underline;
 }
 
@@ -182,28 +194,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Main / Adventages */
-
-.adventages-inner {
-    flex-wrap: nowrap;
-    padding: 5rem 0;
-    margin: 0 -3rem;
-}
-
-.adventages-item {
-    width: 33.333333%;
-    padding: 0 3rem;
-}
-
-.adventages-title {
-    margin-bottom: 1.5rem;
-}
-
-.adventages-text {
-    line-height: 1.5;
-}
-
-
 /* Main / About */
 
 .main {
@@ -212,19 +202,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-inner {
     flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 5rem 3rem;
-}
-
-.about-info {
-    width: 50%;
+    justify-content: space-evenly;
+    padding: 5rem 0;
 }
 
 .about-title {
+    font-size: 2.4rem;
+    font-weight: 700;
     margin-bottom: 1.5rem;
 }
 
 .about-text {
+    font-size: 1.6rem;
+    font-weight: 300;
     line-height: 1.5;
 }
 
