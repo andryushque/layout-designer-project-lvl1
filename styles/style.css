@@ -74,6 +74,12 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.anchor {
+    padding-top: 7rem;
+    margin-top: -7rem;
+    background-clip: content-box;
+}
+
 
 /* Header */
 
@@ -348,16 +354,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-list-link:hover {
     text-decoration: underline;
-}
-
-
-/* Links */
-
-#advantages,
-#about-info,
-#about-rest,
-#request {
-    padding-top: 7rem;
-    margin-top: -7rem;
-    background-clip: content-box;
 }
